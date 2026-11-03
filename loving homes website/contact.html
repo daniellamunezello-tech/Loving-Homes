@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Loving Homes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="header">
+      <div class="utility">
+        <div class="container utility__inner">
+          <nav class="utility__nav" aria-label="Secondary">
+            <a href="./index.html#book">book a Meet &amp; Greet</a>
+            <a href="./shop.html">shop</a>
+            <a href="./grooming-parlour-spa.html">grooming parlour &amp; spa</a>
+            <a href="./luxury-hotel-rooms.html">luxury hotel rooms</a>
+            <a href="./petwatch.html">Petwatch</a>
+            <a href="./private-grass-area.html">private grass area</a>
+          </nav>
+          <a class="btn btn--small btn--sky" href="./contact.html">find a location</a>
+        </div>
+      </div>
+
+      <div class="mainnav">
+        <div class="container mainnav__inner">
+          <a href="./index.html" class="brand">Loving Homes</a>
+          <button class="menu-toggle" aria-expanded="false" aria-controls="main-menu">menu</button>
+          <nav class="mainnav__menu" id="main-menu" aria-label="Primary">
+            <a href="./index.html">Home</a>
+            <a href="./shop.html">Shop</a>
+            <a href="./grooming-parlour-spa.html">Grooming &amp; Spa</a>
+            <a href="./luxury-hotel-rooms.html">Luxury Hotel</a>
+            <a href="./petwatch.html">Petwatch</a>
+            <a href="./private-grass-area.html">Private Grass</a>
+            <a href="./contact.html" aria-current="page">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section
+        class="page-hero"
+        style="background-image: url('https://images.unsplash.com/photo-1556761175-5973dc0af32e?auto=format&fit=crop&w=1800&q=80')"
+      >
+        <div class="page-hero__overlay" aria-hidden="true"></div>
+        <div class="container">
+          <h1>Contact us</h1>
+          <p>
+            Questions about daycare, boarding, grooming, or your next visit? Send a message—we
+            reply within one business day.
+          </p>
+        </div>
+      </section>
+
+      <div class="container page-body contact-layout" id="form">
+        <div class="contact-panel">
+          <h2>Send a message</h2>
+          <p class="contact-lead">
+            Tell us about your dog and what you need. Fields marked <span aria-hidden="true">*</span> are
+            required.
+          </p>
+
+          <div class="contact-thanks" data-contact-thanks hidden role="status">
+            Thank you—your message has been noted. (This demo does not send email; connect the form
+            to your server or a form service when you go live.)
+          </div>
+
+          <form class="contact-form" data-contact-form novalidate>
+            <div class="form-row">
+              <label class="form-field">
+                <span class="form-label">Full name <span class="req" aria-hidden="true">*</span></span>
+                <input type="text" name="name" autocomplete="name" required placeholder="Jane Smith" />
+              </label>
+              <label class="form-field">
+                <span class="form-label">Email <span class="req" aria-hidden="true">*</span></span>
+                <input type="email" name="email" autocomplete="email" required placeholder="you@example.com" />
+              </label>
+            </div>
+            <div class="form-row">
+              <label class="form-field">
+                <span class="form-label">Phone</span>
+                <input type="tel" name="phone" autocomplete="tel" placeholder="+1 …" />
+              </label>
+              <label class="form-field">
+                <span class="form-label">Topic <span class="req" aria-hidden="true">*</span></span>
+                <select name="topic" required>
+                  <option value="">Choose one</option>
+                  <option>Daycare</option>
+                  <option>Boarding / luxury hotel</option>
+                  <option>Grooming &amp; spa</option>
+                  <option>Petwatch</option>
+                  <option>Private grass area</option>
+                  <option>Shop</option>
+                  <option>Other</option>
+                </select>
+              </label>
+            </div>
+            <label class="form-field">
+              <span class="form-label">Message <span class="req" aria-hidden="true">*</span></span>
+              <textarea name="message" rows="5" required placeholder="Your dog’s name, age, and how we can help…"></textarea>
+            </label>
+            <button type="submit" class="btn btn--orange contact-submit">Send message</button>
+          </form>
+        </div>
+
+        <aside class="contact-aside" aria-label="Location and hours">
+          <h2>Visit Loving Homes</h2>
+          <ul class="contact-details">
+            <li>
+              <strong>Address</strong>
+              <span>123 Bark Street, Pet City, PC 10101</span>
+            </li>
+            <li>
+              <strong>Phone</strong>
+              <a href="tel:+15551234567">(555) 123-4567</a>
+            </li>
+            <li>
+              <strong>Email</strong>
+              <a href="mailto:hello@lovinghomes.example">hello@lovinghomes.example</a>
+            </li>
+            <li>
+              <strong>Hours</strong>
+              <span>Mon–Fri 7:00–19:00 · Sat–Sun 8:00–18:00</span>
+            </li>
+          </ul>
+          <p class="contact-note">
+            For urgent pet health concerns, contact your veterinarian. This form is for general
+            inquiries and bookings only.
+          </p>
+        </aside>
+      </div>
+
+      <div class="container page-body contact-legal">
+        <section id="privacy">
+          <h2>Privacy notice</h2>
+          <p>
+            We use the details you send only to respond to your inquiry. A full privacy policy can
+            be published here when your business is ready.
+          </p>
+        </section>
+        <section id="terms">
+          <h2>Terms of use</h2>
+          <p>
+            Site content is for information about Loving Homes services. Final terms can be added by
+            your legal team before launch.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p>Loving Homes &copy; 2026</p>
+        <nav aria-label="Footer">
+          <a href="./contact.html#privacy">Privacy Notice</a>
+          <a href="./contact.html#terms">Terms of Use</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
